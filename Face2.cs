@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+FaceTestの2Player目のつもりで作った。
+*/
 public class Face2 : Photon.MonoBehaviour {
 	public GameObject face;
 	SkinnedMeshRenderer skinnedMeshRenderer;

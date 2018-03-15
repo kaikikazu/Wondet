@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+自キャラが分かるように追従する目印スクリプト
+*/
 public class Find : MonoBehaviour {
 
 	public GameObject unity;

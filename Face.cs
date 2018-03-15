@@ -9,6 +9,7 @@ public class Face : Photon.MonoBehaviour {
 	public int A_mouth,I_mouth,U_mouth,E_mouth,O_mouth;
 
 	// Use this for initialization
+	//母音のブレンドシェイプの値を取得。値はOVRlipSyncによって自動で変動している。
 	void Start () {
 		face = GameObject.Find("MTH_DEF");
 		skinnedMeshRenderer = face.GetComponent<SkinnedMeshRenderer> ();
@@ -20,6 +21,7 @@ public class Face : Photon.MonoBehaviour {
 	}
 	
 	// Update is called once per frame
+	//母音のブレンドシェイプの値を設定。別アプリケーションで動いてるキャラにlipSyncを反映させるために手動でつける必要がある
 	void Update () {
 		skinnedMeshRenderer.SetBlendShapeWeight(A_mouth,A);
 		skinnedMeshRenderer.SetBlendShapeWeight(I_mouth,I);
